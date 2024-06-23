@@ -1,0 +1,52 @@
+[ec2-user@ip-172-31-25-185 ~]$ mkdir Ragavan
+[ec2-user@ip-172-31-25-185 ~]$ ls
+Ragavan
+[ec2-user@ip-172-31-25-185 ~]$ touch file{01..20}.txt
+[ec2-user@ip-172-31-25-185 ~]$ ls
+Ragavan     file02.txt  file04.txt  file06.txt  file08.txt  file10.txt  file12.txt  file14.txt  file16.txt  file18.txt  file20.txt
+file01.txt  file03.txt  file05.txt  file07.txt  file09.txt  file11.txt  file13.txt  file15.txt  file17.txt  file19.txt
+[ec2-user@ip-172-31-25-185 ~]$ cd Ragavan
+[ec2-user@ip-172-31-25-185 Ragavan]$ touch file{01..20}.txt
+[ec2-user@ip-172-31-25-185 Ragavan]$ ls
+file01.txt  file03.txt  file05.txt  file07.txt  file09.txt  file11.txt  file13.txt  file15.txt  file17.txt  file19.txt
+file02.txt  file04.txt  file06.txt  file08.txt  file10.txt  file12.txt  file14.txt  file16.txt  file18.txt  file20.txt
+[ec2-user@ip-172-31-25-185 Ragavan]$ mv file01.txt file01.yml
+[ec2-user@ip-172-31-25-185 Ragavan]$ mv file02.txt file02.yml
+[ec2-user@ip-172-31-25-185 Ragavan]$ mv file03.txt file03.yml
+[ec2-user@ip-172-31-25-185 Ragavan]$ mv file04.txt file04.yml
+[ec2-user@ip-172-31-25-185 Ragavan]$ mv file05.txt file05.yml
+[ec2-user@ip-172-31-25-185 Ragavan]$ ls
+file01.yml  file03.yml  file05.yml  file07.txt  file09.txt  file11.txt  file13.txt  file15.txt  file17.txt  file19.txt
+file02.yml  file04.yml  file06.txt  file08.txt  file10.txt  file12.txt  file14.txt  file16.txt  file18.txt  file20.txt
+[ec2-user@ip-172-31-25-185 Ragavan]$ ls -ltrh
+total 0
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file20.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file19.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file18.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file17.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file16.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file15.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file14.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file13.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file12.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file11.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file10.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file09.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file08.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file07.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file06.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file05.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file04.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file03.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file02.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Jun 23 14:26 file01.yml
+[ec2-user@ip-172-31-25-185 Ragavan]$ head -5 file{01..20}.yml
+==> file01.yml <==
+
+==> file02.yml <==
+
+==> file03.yml <==
+
+==> file04.yml <==
+
+==> file05.yml <==
